@@ -1,0 +1,172 @@
+[package]
+name = "rust-training"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.53", features = ["macros", "rt", "sync", "time"] }
+sqlx = { version = "0.8.6", default-features = false, features = ["runtime-tokio", "postgres", "macros"] }
+
+[[bin]]
+name = "01_base_01_measurement"
+path = "exercises/01_base/01_measurement/main.rs"
+[[bin]]
+name = "01_base_02_readings"
+path = "exercises/01_base/02_readings/main.rs"
+[[bin]]
+name = "01_base_03_reading_model"
+path = "exercises/01_base/03_reading_model/main.rs"
+[[bin]]
+name = "01_base_04_quality"
+path = "exercises/01_base/04_quality/main.rs"
+[[bin]]
+name = "01_base_05_parsing_errors"
+path = "exercises/01_base/05_parsing_errors/main.rs"
+[[bin]]
+name = "01_base_06_collections_iterators"
+path = "exercises/01_base/06_collections_iterators/main.rs"
+[[bin]]
+name = "01_base_07_hash_maps_sets"
+path = "exercises/01_base/07_hash_maps_sets/main.rs"
+[[bin]]
+name = "01_base_08_traits"
+path = "exercises/01_base/08_traits/main.rs"
+[[bin]]
+name = "01_base_09_error_display"
+path = "exercises/01_base/09_error_display/main.rs"
+[[bin]]
+name = "01_measurement_todo"
+path = "exercises/01_base/01_measurement/TODO.rs"
+[[bin]]
+name = "02_readings_todo"
+path = "exercises/01_base/02_readings/TODO.rs"
+[[bin]]
+name = "03_reading_model_todo"
+path = "exercises/01_base/03_reading_model/TODO.rs"
+[[bin]]
+name = "04_quality_todo"
+path = "exercises/01_base/04_quality/TODO.rs"
+[[bin]]
+name = "05_parsing_errors_todo"
+path = "exercises/01_base/05_parsing_errors/TODO.rs"
+[[bin]]
+name = "06_collections_iterators_todo"
+path = "exercises/01_base/06_collections_iterators/TODO.rs"
+[[bin]]
+name = "07_hash_maps_sets_todo"
+path = "exercises/01_base/07_hash_maps_sets/TODO.rs"
+[[bin]]
+name = "08_traits_todo"
+path = "exercises/01_base/08_traits/TODO.rs"
+[[bin]]
+name = "09_error_display_todo"
+path = "exercises/01_base/09_error_display/TODO.rs"
+[[bin]]
+name = "01_base_10_reading_service"
+path = "exercises/01_base/10_reading_service/main.rs"
+[[bin]]
+name = "01_base_11_async_reading_service"
+path = "exercises/01_base/11_async_reading_service/main.rs"
+[[bin]]
+name = "01_base_12_iterator_ranges"
+path = "exercises/01_base/12_iterator_ranges/main.rs"
+[[bin]]
+name = "04_mqtt_01_mqtt_messages"
+path = "exercises/04_mqtt/01_mqtt_messages/main.rs"
+[[bin]]
+name = "03_postgres_sql_01_postgres_queries"
+path = "exercises/03_postgres_sql/01_postgres_queries/main.rs"
+[[bin]]
+name = "03_postgres_sql_02_sqlx_repository"
+path = "exercises/03_postgres_sql/02_sqlx_repository/main.rs"
+[[bin]]
+name = "03_postgres_sql_03_postgres_migrations"
+path = "exercises/03_postgres_sql/03_postgres_migrations/main.rs"
+
+[[bin]]
+name = "03_postgres_sql_04_postgres_repository_integration"
+path = "exercises/03_postgres_sql/04_postgres_repository_integration/main.rs"
+
+[[bin]]
+name = "03_postgres_sql_05_postgres_transactions"
+path = "exercises/03_postgres_sql/05_postgres_transactions/main.rs"
+
+[[bin]]
+name = "03_postgres_sql_06_transaction_rollback"
+path = "exercises/03_postgres_sql/06_transaction_rollback/main.rs"
+
+[[bin]]
+name = "04_mqtt_02_mqtt_postgres_service"
+path = "exercises/04_mqtt/02_mqtt_postgres_service/main.rs"
+
+[[bin]]
+name = "04_mqtt_03_mqtt_batch_service"
+path = "exercises/04_mqtt/03_mqtt_batch_service/main.rs"
+
+[[bin]]
+name = "04_mqtt_04_mqtt_batch_deduplication"
+path = "exercises/04_mqtt/04_mqtt_batch_deduplication/main.rs"
+
+[[bin]]
+name = "02_concurrency_01_box_recursive_tree"
+path = "exercises/02_concurrency/01_box_recursive_tree/main.rs"
+
+[[bin]]
+name = "02_concurrency_02_rc_shared_tree"
+path = "exercises/02_concurrency/02_rc_shared_tree/main.rs"
+
+[[bin]]
+name = "02_concurrency_03_rc_refcell_store"
+path = "exercises/02_concurrency/03_rc_refcell_store/main.rs"
+
+[[bin]]
+name = "02_concurrency_04_arc_mutex_threads"
+path = "exercises/02_concurrency/04_arc_mutex_threads/main.rs"
+
+[[bin]]
+name = "02_concurrency_05_threads_channels"
+path = "exercises/02_concurrency/05_threads_channels/main.rs"
+
+[[bin]]
+name = "02_concurrency_06_rwlock_shared_state"
+path = "exercises/02_concurrency/06_rwlock_shared_state/main.rs"
+
+[[bin]]
+name = "02_concurrency_07_tokio_tasks"
+path = "exercises/02_concurrency/07_tokio_tasks/main.rs"
+
+[[bin]]
+name = "02_concurrency_08_tokio_channels"
+path = "exercises/02_concurrency/08_tokio_channels/main.rs"
+
+[[bin]]
+name = "02_concurrency_09_tokio_cancellation"
+path = "exercises/02_concurrency/09_tokio_cancellation/main.rs"
+
+[[bin]]
+name = "02_concurrency_10_tokio_join_bounded_concurrency"
+path = "exercises/02_concurrency/10_tokio_join_bounded_concurrency/main.rs"
+
+[[bin]]
+name = "02_concurrency_11_tokio_worker_pool"
+path = "exercises/02_concurrency/11_tokio_worker_pool/main.rs"
+
+[[bin]]
+name = "02_concurrency_12_tokio_watch_shutdown"
+path = "exercises/02_concurrency/12_tokio_watch_shutdown/main.rs"
+
+[[bin]]
+name = "02_concurrency_13_tokio_spawn_blocking"
+path = "exercises/02_concurrency/13_tokio_spawn_blocking/main.rs"
+
+[[bin]]
+name = "02_concurrency_13_tokio_spawn_blocking_todo"
+path = "exercises/02_concurrency/13_tokio_spawn_blocking/TODO.rs"
+
+[[bin]]
+name = "02_concurrency_14_tokio_timeouts_retries"
+path = "exercises/02_concurrency/14_tokio_timeouts_retries/main.rs"
+
+[[bin]]
+name = "02_concurrency_14_tokio_timeouts_retries_todo"
+path = "exercises/02_concurrency/14_tokio_timeouts_retries/TODO.rs"

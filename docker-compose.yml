@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: rust_training
+      POSTGRES_PASSWORD: rust_training
+      POSTGRES_DB: rust_training
+    ports:
+      - "5433:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U rust_training -d rust_training"]
+      interval: 1s
+      timeout: 5s
+      retries: 30
